@@ -1,0 +1,13 @@
+{
+  "name": "sveltree",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "svelte": "./src/index.js",
+  "exports": { ".": { "svelte": "./src/index.js", "import": "./dist/index.js" } },
+  "files": ["dist", "src"],
+  "scripts": { "build": "vite build", "prepare": "bun run build" },
+  "peerDependencies": { "svelte": "^4.0.0 || ^5.0.0" },
+  "devDependencies": { "svelte": "^5.0.0", "vite": "^5.0.0", "@sveltejs/vite-plugin-svelte ": "^3.0.0" }
+}
